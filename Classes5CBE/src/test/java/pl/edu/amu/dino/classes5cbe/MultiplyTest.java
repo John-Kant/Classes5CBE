@@ -18,15 +18,35 @@ public class MultiplyTest {
     }
 
     @Test
-    public void testMultiply() {
+    public void testMultiply0() {
         System.out.println("multiply");
         String a = "2";
         String b = "3";
         String expResult = "1";
         String result = Multiply.multiply(a, b);
+        assertNotEquals(expResult, result);
+        
+    }
+    
+    @Test
+    public void testMultiply1(){
+        System.out.println("multiply1");
+        String a = "2";
+        String b = "3";
+        String expResult = "6";
+        String result = Multiply.multiply(a, b);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    }
+    
+    @Test
+    public void testMultiply2(){
+        System.out.println("multiply2");
+        String a = "30";
+        String b = "10";
+        String expResult = "300";
+        String result = Multiply.multiply(a, b);
+        assertEquals(expResult, result);
+        
     }
     
 }
