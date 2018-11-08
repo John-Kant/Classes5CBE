@@ -11,5 +11,9 @@ package pl.edu.amu.dino.classes5cbe;
  */
 public class Multiply {
    public static String multiply(String a, String b){
-   return "1";} 
+       int mult1 = Integer.valueOf(a);
+       int mult2 = Integer.valueOf(b);
+       String result = Integer.toString(mult2*mult1);
+    return result;
+   }
 }
