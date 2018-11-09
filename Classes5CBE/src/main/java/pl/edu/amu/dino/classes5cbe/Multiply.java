@@ -11,9 +11,12 @@ package pl.edu.amu.dino.classes5cbe;
  */
 public class Multiply {
    public static String multiply(String a, String b){
-       int mult1 = Integer.valueOf(a);
-       int mult2 = Integer.valueOf(b);
-       String result = Integer.toString(mult2*mult1);
-    return result;
+
+     int inta = Integer.getInteger(a);
+       int intb = Integer.getInteger(b);
+
+       int result = inta * intb;
+
+       return String.valueOf(result);
    }
 }
