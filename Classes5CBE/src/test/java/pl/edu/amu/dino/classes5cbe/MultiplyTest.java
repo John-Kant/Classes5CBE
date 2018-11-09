@@ -6,14 +6,14 @@
 package pl.edu.amu.dino.classes5cbe;
 
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 /**
- *
  * @author jsiwek
  */
 public class MultiplyTest {
-    
+
     public MultiplyTest() {
     }
 
@@ -25,11 +25,11 @@ public class MultiplyTest {
         String expResult = "1";
         String result = Multiply.multiply(a, b);
         assertNotEquals(expResult, result);
-        
+
     }
-    
+
     @Test
-    public void testMultiply1(){
+    public void testMultiply1() {
         System.out.println("multiply1");
         String a = "2";
         String b = "3";
@@ -37,16 +37,16 @@ public class MultiplyTest {
         String result = Multiply.multiply(a, b);
         assertEquals(expResult, result);
     }
-    
+
     @Test
-    public void testMultiply2(){
+    public void testMultiply2() {
         System.out.println("multiply2");
         String a = "30";
         String b = "10";
         String expResult = "300";
         String result = Multiply.multiply(a, b);
         assertEquals(expResult, result);
-        
+
     }
 
     @Test
@@ -68,6 +68,7 @@ public class MultiplyTest {
         String result = Multiply.multiply(a, b);
         assertNotEquals(expResult, result);
     }
+
     @Test
     public void testMultiply3() {
         System.out.println("multiply");
@@ -76,5 +77,36 @@ public class MultiplyTest {
         String expResult = null;
         String result = Multiply.multiply(a, b);
         assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testMultiply4() {
+        String a = "Hello";
+        String b = "World";
+        int expResult = 260000;
+        Multiply.multiply(a, b);
+        int result = Multiply.result1;
+        assertEquals(expResult, result);
+
+    }
+
+    @Test
+    public void testMultiply5() {
+        String a = "Software";
+        String b = "Engineering";
+        int expResult = 953433;
+        Multiply.multiply(a, b);
+        int result = Multiply.result1;
+        assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testMultiply6() {
+        String a = "Hello";
+        String b = "Engineering";
+        int expResult = 2;
+        Multiply.multiply(a, b);
+        int result = Multiply.result1;
+        assertNotEquals(expResult, result);
     }
 }
